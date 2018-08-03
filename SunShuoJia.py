@@ -1,4 +1,4 @@
-mport os
+import os
 import requests
 print(os.getcwd())
 r = requests.get("https://www.baidu.com/")
@@ -6,3 +6,4 @@ print(r.url)
 print(r.encoding)
 print(r.text)
 print("已完成")
+print("The end")

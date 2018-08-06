@@ -37,4 +37,4 @@ REATE TABLE players (id INT auto_increment PRIMARY KEY,
 -- SELECT name AS "名字",age AS "年龄",sex AS "性别",fire_out AS "火力" FROM players;
 -- SELECT * ,CASE  WHEN sex=0 THEN "男" WHEN sex=1 THEN "女" ELSE "保密" END "性别" FROM players_copy;
 -- SELECT *,CASE WHEN fire_out <1000 THEN "菜鸟" ELSE "猛男" END "火力" FROM players_copy;
-
+--

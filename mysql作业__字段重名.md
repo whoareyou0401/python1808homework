@@ -1,0 +1,28 @@
+-- CREATE TABLE ballPeople(id int auto_increment PRIMARY  KEY , name VARCHAR(12),age int ,sex VARCHAR(4),fire_out int);
+-- 创建表
+-- ALTER TABLE ballPeople CHANGE sex sex int;
+-- 更改字段类型
+-- DESC ballPeople;
+-- 查看字段信息
+-- INSERT INTO ballPeople(name,age,sex,fire_out) VALUES("维利",48,1,1500),("盖伦",35,0,1389),("拉克丝",28,1,1025),("维克托",64,0,2510),("周二珂",84,1,1800);
+-- 添加数据到表中
+-- UPDATE ballPeople set age=118 WHERE name="盖伦"; 
+-- 更新盖伦的age 
+-- DELETE FROM ballPeople WHERE name="维克托";
+-- 删除名字是维克托的数据
+-- SELECT * FROM ballPeople WHERE age>20;
+-- 查找age大于20的数据 
+-- SELECT * FROM ballPeople WHERE name LIKE "周%";
+-- 模糊查找name是周开头的数据
+-- SELECT * FROM ballPeople WHERE id BETWEEN 1 and 5;
+-- 查找id 1到5的数据
+--  SELECT * FROM ballPeople WHERE id LIMIT 5;
+-- 查找id为条件的前5个数据
+-- SELECT * FROM ballPeople WHERE id LIMIT 2 OFFSET 3;
+-- id为条件 第5个数据的后两个
+-- SELECT name AS 姓名,age AS 年龄 FROM ballPeople;
+-- 字段别名
+-- SELECT CASE sex WHEN 1 THEN "女" WHEN 0 THEN "男" END , CASE WHEN fire_out<1000 THEN "擦剂" WHEN fire_out>1000 THEN "蒙牛你" END FROM ballPeople ;
+-- 将字段内的值 别名   多条字段别名  
+-- SELECT , CASE WHEN fire_out<1000 THEN "擦剂" WHEN fire_out>1000 THEN "蒙牛你" END FROM ballPeople ;
+-- 将字段内的值 别名  单条别名

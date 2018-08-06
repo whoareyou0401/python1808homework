@@ -1,0 +1,49 @@
+REATE TABLE football(id int auto_increment PRIMARY KEY,name VARCHAR(30),age VARCHAR(10),sex VARCHAR(4),fire_out VARCHAR(30) );
+-- INSERT INTO football(id,name,age,sex,fire_out) VALUES("1","张三","20","0","1100"),("2","李四","25","0","900"),("3","王五","19","0","1200"),("4","张飞","21","0","1000"),("5","王昭君","23","1","1300");
+
+-- 查询练习
+ -- SELECT * FROM football ;
+ -- SELECT name,sex from football;
+-- SELECT *FROM football WHERE name LIKE '张%';
+-- SELECT *FROM football LIMIT 2 OFFSET 2;
+-- SELECT * FROM football WHERE id in(1,3);
+
+-- 删除
+-- DELETE FROM football WHERE id=5;
+
+-- ALTER TABLE football ADD city int DEFAULT 1;
+-- DELETE FROM football WHERE is_delet;
+-- ALTER TABLE football DROP COLUMN is_delet;
+-- ALTER TABLE football DROP COLUMN city;
+
+-- 字段别名
+-- SELECT name AS fool_name,age fool_age FROM football;
+
+-- 男女
+-- SELECT CASE WHEN sex = 0 THEN '男' WHEN sex = 1 THEN '女' end FROM football;
+-- 火力1000上下
+-- SELECT case WHEN fire_out>=1000 THEN '猛男' WHEN fire_out<1000 THEN'菜鸡' END FROM football;-- CREATE TABLE football(id int auto_increment PRIMARY KEY,name VARCHAR(30),age VARCHAR(10),sex VARCHAR(4),fire_out VARCHAR(30) );
+-- INSERT INTO football(id,name,age,sex,fire_out) VALUES("1","张三","20","0","1100"),("2","李四","25","0","900"),("3","王五","19","0","1200"),("4","张飞","21","0","1000"),("5","王昭君","23","1","1300");
+
+-- 查询练习
+ -- SELECT * FROM football ;
+ -- SELECT name,sex from football;
+-- SELECT *FROM football WHERE name LIKE '张%';
+-- SELECT *FROM football LIMIT 2 OFFSET 2;
+-- SELECT * FROM football WHERE id in(1,3);
+
+-- 删除
+-- DELETE FROM football WHERE id=5;
+
+-- ALTER TABLE football ADD city int DEFAULT 1;
+-- DELETE FROM football WHERE is_delet;
+-- ALTER TABLE football DROP COLUMN is_delet;
+-- ALTER TABLE football DROP COLUMN city;
+
+-- 字段别名
+-- SELECT name AS fool_name,age fool_age FROM football;
+
+-- 男女
+-- SELECT CASE WHEN sex = 0 THEN '男' WHEN sex = 1 THEN '女' end FROM football;
+-- 火力1000上下
+-- SELECT case WHEN fire_out>=1000 THEN '猛男' WHEN fire_out<1000 THEN'菜鸡' END FROM football;

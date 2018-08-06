@@ -1,0 +1,32 @@
+-- CREATE TABLE footballTearm(id INT auto_increment PRIMARY KEY,NAME VARCHAR(16),age int,sex int ,fire_out INT);
+-- INSERT INTO footballTearm(NAME,age,sex,fire_out) VALUES("小罗纳尔多",18,1,1000),("姆巴佩",18,1,1200),("贝克汉姆",30,1,1500),("c罗纳尔多",35,1,1000),("梅西",29,1,800);
+-- 删除梅西
+-- DELETE FROM footballTearm WHERE name="梅西";
+-- 性别不能为空
+-- ALTER TABLE footballTearm MODIFY sex INT NOT NULL;
+-- 查以c开头的队员
+-- SELECT id, NAME,  sex,fire_out  FROM footballTearm WHERE NAME LIKE"c%";
+-- 查找1到2的队员
+-- SELECT id, NAME,  sex,fire_out  FROM footballTearm WHERE id BETWEEN 1 and 2;
+-- 去除重名的队员
+-- SELECT DISTINCT NAME FROM footballTearm;
+-- 查找in中的元素
+-- SELECT *FROM footballTearm WHERE id in(1,3);
+-- 查找第一条以后的2条数据
+-- SELECT * FROM footballTearm WHERE id LIMIT 2 OFFSET 1 ;
+-- 额外：1 将你查出来的sex字段对应的数据 0转成男 1 转成女 其他的转成保密
+-- 
+-- ​			2 火力大于1000的 转成猛男 小于1000 转成菜鸟
+-- 
+-- ​			学习：case when then else 
+SELECT id ,NAME AS 名字,
+	(case sex
+		when 1 then '男'
+		when 0 then '女'
+		else '保密' 
+		end)性别,
+	  fire_out,(case 
+			when fire_out >= 1000 then '猛男'
+			else '菜鸡'
+			end)火力输出，
+FROM footballTearm;

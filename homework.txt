@@ -1,0 +1,41 @@
+-- CREATE TABLE homework(id int auto_increment PRIMARY KEY,
+-- 											 name VARCHAR(30),
+-- 											 age int,
+-- 											 sex int,
+-- 											 fire_out int);
+-- INSERT INTO homework(id,name,age,sex,fire_out)VALUES
+-- ("2","赵大","18","0","1200"),
+-- ("3","钱珥","16","1","887"),
+-- ("4","孙三","19","3","1100"),
+-- ("5","李四","17","0","999"),
+-- ("6","周梅","16","1","444"),
+-- ("7","吴六","21","3","1888"),
+-- ("8","郑七","22","0","888"),
+--  ("9","王八","15","0","1000");
+-- DELETE FROM homework WHERE name="钱珥";删除“钱珥”
+-- ALTER TABLE homework ADD citycode VARCHAR(6);给表添加新字段“citycode”
+-- ALTER TABLE homework MODIFY name VARCHAR(30) NOT NULL; 给homework的name字段添加不能为空约束
+-- show CREATE TABLE homework; 查看已建立的表的当初创建时的SQL语句
+--    CREATE TABLE `homework` (
+--   `id` int(11) NOT NULL AUTO_INCREMENT,
+--   `name` varchar(30) NOT NULL,
+--   `age` int(11) DEFAULT NULL,
+--   `sex` varchar(20) DEFAULT NULL,
+--   `fire_out` int(11) DEFAULT NULL,
+--   `citycode` varchar(6) DEFAULT NULL,
+--   PRIMARY KEY (`id`)
+-- ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8
+-- 	 SELECT * FROM homework 查看表的所有信息     
+-- SELECT * FROM homework WHERE "name" LIKE "李%";  查找姓李的人
+-- SELECT * FROM homework LIMIT 3,6;   从第6位起找三个人的数据
+-- ALTER TABLE homework CHANGE name stu_name VARCHAR(30) NOT NULL ;  将字段名“name”修改为“stu_name” 
+-- SELECT  CASE sex 
+-- 	WHEN "0" THEN "男"
+-- 	WHEN "1" THEN "女"
+-- 	ELSE "保密" END
+--  FROM playstar
+SELECT CASE
+	WHEN fire_out>1000 THEN "猛男"
+	WHEN fire_out<1000 THEN "菜鸟"
+ELSE "其他" END
+FROM playstar

@@ -1,0 +1,17 @@
+use py1808day01;
+SHOW TABLES
+CREATE TABLE players(id int auto_increment PRIMARY KEY, 
+	                         name VARCHAR(30),
+                           age int,
+                           sex int,
+	                         fire_out int);
+INSERT INTO players(name,age,sex,fire_out) VALUES ('James',33,0,2000),('Kobe',38,0,2000),('KD',32,0,1900),('Thomas',31,0,1000),('MG',40,0,800),('LINA',28,1,700),('Limi',30,1,900);
+SELECT * FROM players;
+SELECT * FROM players WHERE id BETWEEN 1 AND 3;
+SELECT * FROM players LIMIT 5;
+SELECT * FROM players LIMIT 5 OFFSET 5;
+SELECT * FROM players id IN (1,3,5);
+SELECT * FROM players age>33;
+UPDATE players SET name="Lucy" WHERE name='LINA';
+DELETE FROM players WHERE age=33;
+ALTER TABLE  ADD players hobby VARCHAR(15); 

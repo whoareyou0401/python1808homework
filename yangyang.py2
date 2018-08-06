@@ -1,0 +1,38 @@
+-- CREATE table player(id int auto_increment PRIMARY KEY, name VARCHAR(30),
+-- 										sex VARCHAR(4), age int, fire_out int )
+-- INSERT INTO player(name, sex, age, fire_out) VALUES("姆巴佩",0,19,1400),("C罗",0,30,1500),("莫德里奇",0,30,1500),("马塞洛",0,30,1300),("J罗",0,22,900);
+-- show databases;
+-- create database python1808homework charset="utf8";
+-- drop database python1808homework;
+-- describe player;
+-- select * from player;
+-- select id,name,fire_out from player;
+-- select name as 名字, sex as 性别, age as 年龄, id as 工号 from player;
+-- SELECT * FROM player WHERE id LIMIT 3;
+-- SELECT * FROM player WHERE id in (2,4,5) LIMIT 2 OFFSET 1;
+-- SELECT * FROM player WHERE id in (1,3,5) LIMIT 1,2;
+-- SELECT * from player WHERE id in (1,3,5) and age>25;
+-- SELECT * from player WHERE id LIMIT 2;
+-- UPDATE player SET name="aaa";
+-- UPDATE player SET name="姆巴佩" WHERE id=1;
+-- UPDATE player SET name="C罗" WHERE id=2;
+-- UPDATE player SET name="莫德里奇" WHERE id=3;
+-- UPDATE player SET name="马塞洛" WHERE id=4;
+-- UPDATE player SET name="J罗" WHERE id=5;
+-- DELETE FROM class WHERE id=2;
+-- INSERT INTO class VALUES(2,"pyhthon1802");
+-- DELETE FROM staff;
+-- ALTER TABLE player ADD salary int NOT NULL;
+-- UPDATE player SET salary=1500;
+-- ALTER TABLE player MODIFY name VARCHAR(30) UNIQUE;
+-- CREATE TABLE class(id int auto_increment PRIMARY KEY, name VARCHAR(30));
+-- INSERT INTO class (name) VALUES("python1801"),("python1802"),("python1808");
+-- CREATE TABLE stu(id int auto_increment PRIMARY KEY,name VARCHAR(30),score int,class_id int,
+-- 								 CONSTRAINT class_fk FOREIGN KEY(class_id) REFERENCES class(id));
+-- 
+-- SELECT * FROM player WHERE NAME LIKE "%罗";
+-- SELECT * from player WHERE name LIKE "_罗";
+ 
+-- SELECT * from player WHERE fire_out BETWEEN 1000 and 1500;
+-- SELECT DISTINCT age FROM player;
+-- SELECT DISTINCT age FROM player; 

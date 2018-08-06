@@ -4,3 +4,27 @@
 
 个人说明:
     emmm毕业要15k会不会很悬
+-- 创建ballplayer表
+-- create TABLE ballplayer (id int primary key auto_increment, name VARCHAR(22), age INT, sex INT, fire_out INT);
+-- 多行插入6个对象
+-- INSERT into ballplayer (name, age, sex, fire_out) VALUES("梅西", 32, 0, 3200),("罗纳尔多", 28, 0, 3400),("内马尔", 29, 0, 3600),("小燕子", 22, 1, 9999),("星仔", 23, 0, 200),("星星", 23, 0, 9999);
+-- 删除操作
+-- delete FROM ballplayer where name="星星";
+-- 改
+-- update ballplayer set fire_out=9999 where name="星仔";
+-- 查战斗力小于5000的
+-- select * from ballplayer where fire_out<5000;
+-- 查名字
+-- SELECT * FROM ballplayer where NAME LIKE "梅_";
+-- 查找age小于30 战斗力大于3000
+-- SELECT * FROM ballplayer where age<30 and fire_out>3000;
+-- 限制查找列出的行数
+-- SELECT * FROM ballplayer where age<30 and fire_out>3000 LIMIT 1 OFFSET 2;
+-- 给字段别命名
+-- select name AS 姓名,sex as 性别 FROM ballplayer;
+-- SQL中的case when THEN else END 用法
+-- select name, age, 
+-- CASE WHEN sex='0' THEN '男' ELSE '女' END as "性别",
+-- CASE WHEN fire_out>1000 and sex='0' THEN "猛男" WHEN fire_out>1000 AND sex='1' THEN "猛女" ELSE "小菜鸡" END as "战斗力"
+-- from ballplayer;
+

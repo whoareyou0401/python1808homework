@@ -1,0 +1,16 @@
+-- CREATE TABLE player(id INT PRIMARY KEY auto_increment, name VARCHAR(30) , age INT , sex VARCHAR(30) , fire_out INT);
+-- INSERT INTO player(id ,name ,age ,sex ,fire_out)VALUES(1 ,"科比" ,18 ,"男" ,5000);
+-- INSERT INTO player(name ,age ,sex ,fire_out)VALUES("詹姆斯" ,19 ,"男" ,3000);
+-- INSERT INTO player(name ,age ,sex ,fire_out)VALUES("克莱汤普森" ,20 ,"男" ,900);
+-- INSERT INTO player(name ,age ,sex ,fire_out)VALUES("保罗" ,33 ,"男" ,2000);
+-- INSERT INTO player(name ,age ,sex ,fire_out)VALUES("韦德" ,35 ,"男" ,900);
+-- INSERT INTO player(name ,age ,sex ,fire_out)VALUES("杜兰特" ,3 ,"男" ,100);
+-- DELETE FROM player WHERE id=6
+-- UPDATE player SET age="39" WHERE id=1;
+-- SELECT name AS 名字,age AS 年龄,sex AS 性别,fire_out AS 火力 FROM player;
+-- SELECT * FROM player WHERE name LIKE "科%";
+-- SELECT * FROM player WHERE id BETWEEN 2 and 4;
+-- SELECT * FROM player WHERE id in(1,2,4);
+-- SELECT *FROM player LIMIT 2;
+-- SELECT * FROM player LIMIT 2 OFFSET 2;
+-- SELECT * FROM player LIMIT 2,2;

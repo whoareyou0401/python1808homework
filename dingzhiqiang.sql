@@ -1,0 +1,32 @@
+REATE TABLE player(id int auto_increment PRIMARY KEY,name VARCHAR(30),age int,sex int,fire_out VARCHAR(20));
+-- INSERT INTO player(id,name,age,sex,fire_out) VALUES(1,"yao","33","0","得分后卫");
+-- INSERT INTO player VALUES(2,"yao2","35","0","前锋");
+-- INSERT INTO player(name,age,sex,fire_out) VALUES("yao1","55","0","前锋"),("yao4","66","0","控球后卫");
+-- INSERT INTO player(name,age,sex,fire_out) VALUES("姚明","34","0","前锋"),("易建联","28","0","中锋");
+-- show create table player;
+-- CREATE TABLE `player` (
+--   `id` int(11) NOT NULL AUTO_INCREMENT,
+--   `name` varchar(30) DEFAULT NULL,
+--   `age` int(11) DEFAULT NULL,
+--   `sex` int(11) DEFAULT NULL,
+--   `fire_out` varchar(20) DEFAULT NULL,
+--   PRIMARY KEY (`id`)
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+-- UPDATE player SET name="詹姆斯" WHERE id=3;
+-- DELETE FROM player WHERE id=2;
+-- DESC player;
+-- ALTER TABLE player MODIFY name VARCHAR(30) NOT NULL;
+-- ALTER TABLE player ADD out_j INT DEFAULT 1;
+
+-- SELECT *FROM player;
+-- SELECT name,fire_out FROM player;
+-- SELECT name as 名字,fire_out AS 位置 FROM player;
+-- SELECT name,age,fire_out FROM player LIMIT 2;
+-- SELECT DISTINCT name FROM player;
+-- SELECT name,age,fire_out FROM player LIMIT 4 OFFSET 2;
+-- SELECT *FROM player WHERE age in (33,55);
+-- SELECT *FROM player WHERE age BETWEEN 33 AND 55;
+-- ALTER TABLE player MODIFY name VARCHAR(20) UNIQUE;
+-- SELECT name, CASE WHEN sex=0 THEN '男' WHEN sex=1 THEN '女' ELSE '保密' END AS 性别,fire_out FROM player;
+-- SELECT name, CASE WHEN out_j>=1000 THEN '猛男' WHEN out_j THEN '菜鸟' END AS 火力值,fire_out FROM player;
+

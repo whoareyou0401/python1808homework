@@ -1,0 +1,29 @@
+-- 创建一个球员表，以及数据
+-- CREATE TABLE player(id int auto_increment PRIMARY KEY,name VARCHAR(4),age int, sex int,fire_out int);
+-- INSERT INTO player(name, age, sex, fire_out) VALUES("哈登", 30, 0, 1800),("科比", 35, 0, 2000),("杜兰特", 31, 0, 1900);
+-- INSERT INTO player(name, age, sex, fire_out) VALUES("郎平", 40, 1, 800),("朱婷", 28, 1, 1500);
+-- INSERT INTO player(name, age, sex, fire_out) VALUES("马冬梅", 20, 1, 900),("西施", 100, 1, 100);
+
+-- 练习 增加 删除 删除 改 查
+-- ALTER TABLE player ADD school VARCHAR(10) DEFAULT "家里蹲大学";
+-- ALTER TABLE player DROP COLUMN school;
+-- delete from player where id=1;
+-- UPDATE player SET fire_out=1900 WHERE name="科比";
+-- SELECT * FROM player;
+
+-- 查询各种条件like between distinct in limit
+-- SELECT * FROM player WHERE name like "科%";
+-- SELECT * FROM player WHERE id BETWEEN 3 AND 4;
+-- SELECT DISTINCT name FROM player;
+-- SELECT * FROM player WHERE id in (2, 4, 5);
+-- SELECT * FROM player LIMIT 2,3;
+
+-- 给字段其别名
+-- SELECT name AS 姓名, sex AS 性别 from player;
+
+-- 将你查出来的sex字段对应的数据 0转成男 1 转成女 其他的转成保密
+-- SELECT CASE sex WHEN 0 THEN "男" WHEN 1 THEN "女" ELSE "保密" END FROM player;
+
+-- 火力大于1000的 转成猛男 小于1000 转成菜鸟
+-- SELECT CASE WHEN fire_out > 1000 THEN "猛男" WHEN fire_out < 1000 THEN "菜鸟" ELSE '' END FROM player;
+

@@ -1,0 +1,42 @@
+-- 创建footers表
+-- create table footers(id int primary key auto_increment,uname VARCHAR(30),age int,sex INT,fire_out INT);
+-- 插入语句(单条插入)
+-- insert into footers(uname,age,sex,fire_out) values("郭杰",23,0,1000);
+-- 插入多条语句
+-- insert into footers(uname,age,sex,fire_out) VALUES("郭高杰",23,0,1000),("孔建盛",23,0,1500),("包韵格",21,0,800),("杨洋",23,0,1200),("孔建盛2",29,0,1000),("郭杰3",35,0,1000);
+-- 查询所有的数据
+-- select * from footers
+-- 需求：
+-- 1、筛选出所有带杰的数据
+-- select * from footers where uname like "%杰%";
+-- 2、删除所有以杰结尾的数据
+-- select * from footers where uname like "%杰";
+-- 3、查询出活力值在1000到2000的用户名和年龄,并且按照年龄降序排序
+-- select uname,age from footers where fire_out BETWEEN 1000 AND 2000 order by age desc;
+-- 4、查询出末尾带杰的两个字符的数据
+-- select * from footers where uname like "_杰"
+-- 5、修改字段fire_out字段的属性为不可为空
+-- alter table footers modify fire_out int not null;
+-- 6、查询所有带孔建盛的数据，最多输出2个
+-- select * from footers where uname like "%孔建盛%" limit 1
+-- 7、查询年龄在24,25,27,29,20的数据
+-- 总结 in 后面括号里面的数字是或关系，就是说 判断in前面的字段名是否满足后面括号的其中一个条件即可显示
+-- select * from footers
+-- select  * from  footers where age in (24,25,27,29,20)
+-- 8、为了更好的查看信息，将查出来的数据起汉字别名，并且按照年级排序
+-- select uname as "姓名"  ,age as "年龄",sex as "性别",fire_out as "活力值" from footers;
+-- 9、将包韵格的性别修改为女
+-- update footers set sex = "1" where uname = "包韵格";
+-- select * from footers
+select uname,age,
+case when fire_out >= 1000 then "猛男"
+	when fire_out < 1000 then "菜鸟"
+	else "垃圾"
+	END as "活力值",
+case sex
+	when "1"  then "女" 
+	when "0"  then "男" 
+	else "保密" END as "性别"
+from footers;
+
+-- select * from footers

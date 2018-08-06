@@ -23,3 +23,5 @@
 -- SELECT sex AS gender FROM player;
 -- SELECT * FROM player WHERE gender=0;
 -- SELECT * FROM player WHERE id in (1,3,5);
+SELECT CASE WHEN sex=0 THEN "男" WHEN sex=1 THEN "女" ELSE "保密" END FROM player;
+SELECT CASE WHEN fire_out >=1000 THEN "猛男" ELSE "菜鸟" END FROM player;

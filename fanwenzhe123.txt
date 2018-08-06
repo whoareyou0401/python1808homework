@@ -1,0 +1,12 @@
+ELECT * FROM faker WHERE NAME LIKE"钢%";
+-- SELECT * FROM faker WHERE id BETWEEN 1 and 6
+-- SELECT * FROM faker LIMIT 2 OFFSET 3;
+-- SELECT * FROM faker WHERE id in (1,2,5);
+-- SELECT DISTINCT name FROM faker;
+-- UPDATE faker SET sex=0 WHERE id=2
+-- SELECT name,
+-- CASE sex WHEN 0 THEN "男" ELSE "女" END AS"性别",
+-- CASE WHEN fire_out<1000 THEN "弱鸡" ELSE "牛逼了兄弟" END AS"战斗力"
+-- FROM faker;
+-- SELECT name AS "名字" FROM faker;
+-- ALTER TABLE faker ADD age INT DEFAULT 1

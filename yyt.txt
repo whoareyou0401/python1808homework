@@ -1,0 +1,4 @@
+-- CREATE TABLE lly( id integer PRIMARY KEY auto_increment,name VARCHAR(16),age INT,sex INT,fire_out INT );
+-- INSERT INTO lly(name,age,sex,fire_out) VALUES("嬴渠梁",50,0,1033),("玄奇",20,1,500),("章子怡",39,1,200),("嬴驷",30,0,9999);
+-- SELECT * FROM lly WHERE name LIKE "嬴%";
+-- 查找嬴姓

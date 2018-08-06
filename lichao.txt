@@ -1,0 +1,37 @@
+print("-- CREATE TABLE  ST(id int auto_increment PRIMARY KEY,
+--               age VARCHAR(5),name VARCHAR(20),
+--               sex VARCHAR(5),fire_out VARCHAR(10));
+-- INSERT INTO ST(id,age,name,sex,fire_out) VALUES
+--                ("1","15","李明","1","1000"),
+--                ("2","12","李明","1","1000"),
+--                ("3","11","王红","1","1100"),
+--                ("4","16","徐三","1","1200"),
+--                ("5","10","张思","1","1000");
+
+
+-- INSERT INTO ST(id,age,name,sex,fire_out) VALUES
+--            ("6","19","删除","0","1330");
+-- DELETE FROM ST WHERE id="6";
+
+-- SELECT name AS "徐三" FROM ST;
+-- SELECT *FROM ST;
+-- SELECT name,age FROM ST;
+-- SELECT *FROM ST WHERE name like "李%";
+
+
+-- INSERT INTO ST(id,age,name,sex,fire_out) VALUES
+--              ("6","9","删除","0","1100");
+-- DELETE FROM ST WHERE name="删除";
+
+
+-- SELECT * FROM ST  LIMIT 2 OFFSET 1;
+-- SELECT * FROM ST LIMIT 1,2;
+
+
+-- ALTER TABLE ST ADD is_delete int DEFAULT 1;
+-- ALTER TABLE  ST DROP COLUMN is_delete;
+
+
+--  INSERT INTO ST(id,age,name,sex,fire_out) VALUES
+--                 ("6","19","王宇","0","1100");
+  SELECT case when sex="0" THEN '男' WHEN sex="1" THEN '女' END FROM ST;")

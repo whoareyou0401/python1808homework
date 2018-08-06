@@ -1,0 +1,16 @@
+-- desc player;
+-- insert into player(name,age,sex,fire_out) values ("小明",20,1,"大前锋");
+-- insert into player values (2,"小红",18,0,"中锋"),(3,"李四",24,1,"后卫"),(4,"张三",19,1,"小前锋"),(5,"小依",25,0,"中锋");
+-- insert into player(name,age,sex,fire_out) values ("赵六",30,1,"裁判");
+-- select * from player;
+-- select name from player;
+-- SELECT name from player where name="小明";
+-- select distinct sex from player;
+-- select id "序号",age "年龄",sex "性别",fire_out "火力输出" from player where sex=1 is "男";
+-- alter table player change fire_out post varchar(30);
+-- alter table player add is_delete int default 1;
+-- update player set fire_out="888" where id=6;
+-- select  name "姓名",CASE WHEN(sex=0) THEN "男" WHEN(sex=1) THEN "女" ELSE "保密" END AS 性别,age "年龄",post "位置",case when(fire_out>1000) then "猛男" else "菜鸟" end as "火力输出" FROM player; 
+-- select * from player where name like "小%";
+-- select * from player where age between 20 and 25;
+

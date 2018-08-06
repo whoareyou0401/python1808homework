@@ -1,0 +1,27 @@
+-- show DATABASES
+-- CREATE DATABASE py01Homework charset="utf8";
+-- use py01Homework;
+-- CREATE TABLE player(id int(8),name VARCHAR(64), age int(8), sex VARCHAR(8), fire_out int(16));
+-- ALTER TABLE player ADD PRIMARY KEY(id);
+-- ALTER TABLE player MODIFY COLUMN sex int(8);
+-- SHOW CREATE TABLE player;
+-- INSERT INTO player(id,name,age,sex,fire_out) VALUES(1,"梅西",30,0,1600),(2,"罗纳尔多",33,0,1500),(3,"贝利",40,0,1300),
+-- 																										(4,"内马尔",20,0,18),(5,"贝克汉姆",31,0,800);
+-- UPDATE player SET fire_out=1600 WHERE id =4;
+-- INSERT INTO player(id,name,age,sex,fire_out) VALUE(6,"lino001",18,0,100),(7,"lino001",18,0,100),(8,"lino001",18,0,100);
+-- UPDATE player SET  fire_out=900 WHERE name="lino001";
+-- UPDATE player SET name="lino" WHERE name="lino001";
+-- UPDATE player SET age=205 WHERE id=8;
+-- UPDATE player SET fire_out=500 WHERE id=8;
+-- UPDATE player SET fire_out=600 WHERE id=6;
+-- SELECT DISTINCT name FROM player;
+-- SELECT * FROM player WHERE name LIKE "l%";
+-- SELECT * FROM player WHERE fire_out>1000;
+-- SELECT * FROM player WHERE fire_out BETWEEN 1000 and 1500;
+-- SELECT * FROM player WHERE id <5 LIMIT 3;
+-- DELETE FROM player WHERE name LIKE "l%";
+-- SELECT sex AS gender FROM player;
+-- SELECT * FROM player WHERE gender=0;
+-- SELECT * FROM player WHERE id in (1,3,5);
+SELECT CASE WHEN sex=0 THEN "男" WHEN sex=1 THEN "女" ELSE "保密" END FROM player;
+SELECT CASE WHEN fire_out >=1000 THEN "猛男" ELSE "菜鸟" END FROM player;

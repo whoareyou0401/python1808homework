@@ -1,1 +1,26 @@
  我是胥重阳  也是柠檬酸
+
+-- CREATE TABLE renyuan(id int auto_increment PRIMARY KEY,name VARCHAR(30),age VARCHAR(16),sex VARCHAR(4),fire VARCHAR(20));
+-- DESC staff
+-- DESCRIBE renyuan
+-- INSERT INTO `renyuan` (name,age,sex,fire)
+-- 				values ("mengmeng",22,"女",1800),("niaho",22,"男",1800),("小龙",222,"女",1900),("小娜",22,"男",1800)
+--  									
+-- SELECT id,sex,name FROM renyuan
+
+-- DELETE FROM renyuan WHERE id=10;
+
+--  DELETE FROM renyuan WHERE id BETWEEN 13 and 15;
+-- 		SELECT *FROM renyuan  LIMIT 3
+-- SELECT * FROM renyuan WHILE name like "胥%";
+-- -- SELECT DISTINCT name FROM renyuan;
+
+-- ALTER TABLE renyuan ADD is_delete int DEFAULT 1;
+
+-- ALTER TABLE renyuan ADD zhiye varchar(30) DEFAULT "qiuyuan";
+-- 
+
+-- SELECT name AS qiu_name,age age_1 FROM renyuan
+
+
+

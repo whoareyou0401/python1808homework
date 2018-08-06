@@ -1,0 +1,25 @@
+NSERT into basketballteam (id,NAME,sex,age,fire_out)VALUES("1","Eric","male","5","8000")
+-- INSERT into basketballteam (id,NAME,sex,age,fire_out)VALUES
+-- ("2","stan","male","5","3000"),
+-- ("3","kenny","male","6","8000"),
+-- ("4","kyle","male","5","5"),
+-- ("5","ike","male","5","6000"),
+-- ("6","wendy","female","5","900");
+-- alter TABLE basketballteam add STA int DEFAULT 1;
+-- ALTER TABLE basketballteam CHANGE STA del INT DEFAULT 1;
+-- DELETE FROM basketballteam WHERE id=1
+-- UPDATE basketballteam SET del="0" WHERE name ="ike"
+-- SHOW CREATE TABLE basketballteam
+-- ALTER TABLE basketballteam MODIFY fire_out INT(8)
+-- SHOW CREATE	TABLE basketballteam
+-- SELECT 
+-- CASE WHEN fire_out > 1000 then "猛男"
+-- ELSE "垃圾"
+-- END
+-- FROM basketballteam
+SELECT 
+CASE sex  WHEN "male" then "1"
+		 WHEN "female" then "0"
+ELSE "2"
+END
+FROM basketballteam;

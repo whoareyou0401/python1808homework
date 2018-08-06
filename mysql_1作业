@@ -1,0 +1,52 @@
+-- 1、创建球员表
+--  CREATE TABLE ball(id INT auto_increment PRIMARY KEY,name VARCHAR(20),age INT,
+--  sex VARCHAR(1), fire_out INT  );
+
+-- 2、插入球员信息
+--  INSERT INTO ball(name,age,sex,fire_out) VALUES("皇甫铁牛",18,"0",800),
+-- ("欧阳翠花",19,"1",900),("诸葛村夫",20,"0",1000),("上官二丫",21,"1",1100),
+--  ("慕容狗蛋",22,"0",1200),("东方大壮",22,"0",1300);
+
+-- 3、删除表内容
+-- DELETE FROM ball
+-- 4、删除表
+-- drop table ball
+
+-- 5、根据条件删除表内容
+-- DELETE FROM ball WHERE NAME="东方大壮";
+
+
+-- 6、修改表内容
+-- UPDATE  ball  SET fire_out=1050 WHERE id=1;
+
+-- 7、使用between查询
+-- SELECT * from ball WHERE age BETWEEN 19 and 22;
+
+-- 8、使用模糊查询
+-- SELECT NAME ,fire_out  FROM ball WHERE name LIKE "%阳%";
+
+-- 9、插入一条记录
+-- INSERT into ball(name,age,sex,fire_out)VALUE("长孙全蛋",22,"0",1100);
+
+-- 10、去重查询
+-- SELECT  DISTINCT age from ball; 
+
+-- 11、使用in条件查询
+-- SELECT * FROM ball WHERE age in ("20","18","30");
+
+-- 12、使用limit条件查询
+-- SELECT * from ball LIMIT 2
+-- SELECT * from ball LIMIT 2 OFFSET 3
+-- SELECT * from ball LIMIT 3, 2
+
+-- 13、给字段起别名
+-- select name 姓名, age 年龄,fire_out 火力输出 from ball;
+
+-- 14、火力大于1000的 转成猛男 小于1000 转成菜鸟
+-- SELECT id, CASE name WHEN fire_out>1000 THEN "猛男" ELSE "菜鸡" END 姓名,
+-- age 年龄,
+--  CASE sex  WHEN "0" THEN "男" WHEN "1" THEN "女" ELSE "保密" END 性别,
+-- fire_out 火力输出 from ball 
+
+
+

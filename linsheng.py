@@ -1,2 +1,3 @@
-print("hello world  hello liuda"   )
+print("hello world "   )
 print("nihoa nihao"    )
+print("haofan haoifan" )

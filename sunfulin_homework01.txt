@@ -14,3 +14,12 @@
 -- UPDATE player SET age=205 WHERE id=8;
 -- UPDATE player SET fire_out=500 WHERE id=8;
 -- UPDATE player SET fire_out=600 WHERE id=6;
+-- SELECT DISTINCT name FROM player;
+-- SELECT * FROM player WHERE name LIKE "l%";
+-- SELECT * FROM player WHERE fire_out>1000;
+-- SELECT * FROM player WHERE fire_out BETWEEN 1000 and 1500;
+-- SELECT * FROM player WHERE id <5 LIMIT 3;
+-- DELETE FROM player WHERE name LIKE "l%";
+-- SELECT sex AS gender FROM player;
+-- SELECT * FROM player WHERE gender=0;
+-- SELECT * FROM player WHERE id in (1,3,5);

@@ -1,0 +1,32 @@
+CREATE TABLE  player(id int auto_increment PRIMARY KEY,name VARCHAR(20),age int(100),sex int(4),fire_out int(100));
+INSERT INTO player(name,age,sex,fire_out)VALUES("姚明",35,0,1200),("易建联",31,0,950),("乔丹",45,0,1800),("詹姆斯",36,0,1500),("叶莉",32,1,800),("朱婷",25,1,1000);
+-- 删除 
+DELETE FROM player WHERE name = "朱婷";
+
+SELECT * FROM player;
+-- 修改
+ALTER TABLE player MODIFY name VARCHAR(20) NOT NULL;
+
+-- 查询所有信息
+SELECT * FROM player;
+
+
+-- like 
+
+SELECT * FROM player  where name like "姚%";
+
+-- BETWEEN
+SELECT * FROM player   where age BETWEEN 20 AND 35;
+
+-- distinct
+ SELECT DISTINCT name from player;
+
+-- IN
+ SELECT * FROM player where id in (1,5);
+
+--  limit
+SELECT * from player where fire_out >900 LIMIT 2;
+  
+-- 起别名
+select name AS 名字,age AS 年龄,sex AS 性别,fire_out AS 火力输出 FROM player;
+

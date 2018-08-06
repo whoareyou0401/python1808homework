@@ -1,0 +1,24 @@
+REATE TABLE player(id int auto_increment PRIMARY KEY,name VARCHAR(30),age int,sex int,
+-- fire_out int);
+-- INSERT INTO player(name,age,sex,fire_out) VALUES("马龙","29","0","3000"),("张继科","28","0","2900"),("樊振东","19","0","2950"),("丁宁","28","1","2800"),("刘诗雯","27","1","2750");
+-- ALTER TABLE player ADD is_delete int DEFAULT 1;
+-- UPDATE player SET is_delete=0 WHERE name="樊振东";
+-- UPDATE player set fire_out=800 WHERE name="刘诗雯";
+-- SELECT * FROM player;
+-- SELECT * from player WHERE name LIKE "张%";
+-- SELECT * from player WHERE fire_out BETWEEN 2900 and 3000;
+-- SELECT DISTINCT name FROM player;
+-- SELECT * FROM player WHERE id in (2, 4, 5);
+-- SELECT * FROM player WHERE fire_out > 1000 LIMIT 3;
+-- SELECT name as "姓名",age as "年龄" ,sex as "性别",fire_out as "火力输出" FROM player;
+-- SELECT sex,
+-- CASE sex
+--      WHEN '0' THEN '男'
+--      WHEN '1' THEN '女'
+-- 		 ELSE '保密' END
+-- FROM player;
+SELECT fire_out,
+CASE 
+	   WHEN fire_out>'1000' then "猛男"
+	   ELSE "菜鸟" END
+FROM player;

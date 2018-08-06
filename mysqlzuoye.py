@@ -1,0 +1,32 @@
+--  CREATE TABLE 球员(id INT auto_increment PRIMARY KEY,name VARCHAR(30),age INT,sex INT,fire_out INT);
+--  INSERT INTO 球员(name,age,sex,fire_out)VALUES("科比",41,0,1800),
+--  								("乔丹",55,0,1500),
+--  								("詹姆斯",34,0,1800),
+--  								("姚明",38,0,1400),
+--   							("麦迪",39,0,1300),
+--  								("张三",20,0,500),
+--  								("李四",28,2,1200),
+--   							("陈晓丽",36,1,1000);
+								
+-- -- 删除 
+-- DELETE FROM 球员 WHERE sex =1;
+
+-- 改
+-- ALTER TABLE 球员 MODIFY name VARCHAR(30) NOT NULL;
+
+-- 增
+-- INSERT INTO 球员(name,age,sex,fire_out)VALUES("小丽",27,1,900);
+-- INSERT INTO 球员(name,age,sex,fire_out)VALUES("张三",27,1,1100); 
+-- 查询
+-- like
+-- SELECT * FROM 球员 WHERE name LIKE "科%";
+-- between
+-- SELECT * FROM 球员 WHERE fire_out BETWEEN 1000 AND 1500;
+-- distinct
+-- SELECT DISTINCT name FROM 球员;
+-- in
+-- SELECT * FROM 球员 WHERE id in (2,4,6,8);
+-- limit
+-- SELECT * FROM 球员 WHERE age < 34 LIMIT 4;
+-- 其别名
+-- SELECT name AS 名字,age AS 年龄,sex AS 性别, fire_out AS 火力输出 FROM 球员;

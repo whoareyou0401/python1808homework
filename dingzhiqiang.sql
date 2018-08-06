@@ -1,4 +1,4 @@
-REATE TABLE player(id int auto_increment PRIMARY KEY,name VARCHAR(30),age int,sex int,fire_out VARCHAR(20));
+--CREATE TABLE player(id int auto_increment PRIMARY KEY,name VARCHAR(30),age int,sex int,fire_out VARCHAR(20));
 -- INSERT INTO player(id,name,age,sex,fire_out) VALUES(1,"yao","33","0","得分后卫");
 -- INSERT INTO player VALUES(2,"yao2","35","0","前锋");
 -- INSERT INTO player(name,age,sex,fire_out) VALUES("yao1","55","0","前锋"),("yao4","66","0","控球后卫");

@@ -25,7 +25,7 @@ SELECT id ,NAME AS 名字,
 		when 0 then '女'
 		else '保密' 
 		end)性别,
-	 (case fire_out
+	  fire_out,(case 
 			when fire_out >= 1000 then '猛男'
 			else '菜鸡'
 			end)火力输出，

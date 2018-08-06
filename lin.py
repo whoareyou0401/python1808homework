@@ -1,2 +1,2 @@
-print("jintianxiayu ,wo xiang niao naio   " )
+print("wo xiang niao naio   " )
 

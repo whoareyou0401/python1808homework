@@ -1,0 +1,21 @@
+-- CREATE TABLE player(id INT auto_increment PRIMARY KEY,
+--  name VARCHAR(20),
+-- age INT(3),
+-- sex INT(1),
+-- fire_out INT(4));
+-- INSERT INTO player(name, age, sex, fire_out)VALUES("张三","18","0","800"),
+-- ("李四","19","1","900"),
+-- ("王五","20","2","1000"),
+-- ("赵六","21","0","1100"),
+-- ("刘一","22","0","1200"),
+-- ("张三","18","0","800");
+--  DELETE FROM player WHERE name like"李%"
+-- UPDATE player SET fire_out = 300 WHERE fire_out >1150
+-- SELECT name, fire_out FROM player;
+-- SELECT * FROM player WHERE sex LIKE 0;
+-- SELECT *FROM player WHERE id BETWEEN 1 and 4 ;
+-- SELECT *FROM player WHERE sex =0 LIMIT 3;
+-- SELECT DISTINCT name,sex,age FROM  player;
+-- SELECT *FROM player WHERE id IN(1,3,5);
+-- SELECT  name,age, CASE WHEN sex=0 THEN "男"ELSE"保密"END as"性别"FROM player;
+SELECT name,age, CASE WHEN fire_out>1000 AND sex=0 THEN"猛男" ELSE "小菜鸡"END AS"战斗力"FROM player;

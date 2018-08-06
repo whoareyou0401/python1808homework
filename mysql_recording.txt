@@ -1,0 +1,21 @@
+REATE TABLE players (id INT auto_increment PRIMARY KEY,
+-- 											name VARCHAR(30),
+-- 											age INT,
+-- 											sex INT,
+-- 											fire_out INT);
+-- INSERT INTO players VALUES("1","张三","18","0","800")
+-- INSERT INTO players VALUES("2","李四","19","0","700"),("3","王五","20","0","1200"),("4","赵红","22","1","500"),("5","刘刚","30","0","1700");
+-- DELETE FROM players WHERE id=1;
+-- UPDATE players SET name="李修改" WHERE id=2;
+-- SELECT * FROM players ;
+-- SELECT name FROM players WHERE id in (2,4);
+-- SELECT name,age FROM players WHERE fire_out >900;
+-- SELECT name,age,fire_out FROM players WHERE fire_out >900;
+-- SELECT * FROM players WHERE age BETWEEN 18 AND 22;
+-- SELECT * FROM players WHERE name LIKE "李%";
+-- SELECT * FROM players LIMIT 3;
+-- SELECT * FROM players WHERE name LIKE "王_";
+-- SELECT name AS "名字",age AS "年龄",sex AS "性别",fire_out AS "火力" FROM players;
+-- SELECT * ,CASE  WHEN sex=0 THEN "男" WHEN sex=1 THEN "女" ELSE "保密" END "性别" FROM players_copy;
+-- SELECT *,CASE WHEN fire_out <1000 THEN "菜鸟" ELSE "猛男" END "火力" FROM players_copy;
+--

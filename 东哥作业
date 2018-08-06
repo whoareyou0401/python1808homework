@@ -1,0 +1,30 @@
+-- CREATE TABLE playstar(id INT auto_increment PRIMARY KEY,name VARCHAR(30),sex VARCHAR(4),age VARCHAR(4),fire_out VARCHAR(10));
+-- INSERT INTO playstar (id,name,sex,age,fire_out) VALUES("1","勒布朗·詹姆斯","0","33","1999");
+-- INSERT INTO playstar (id,name,sex,age,fire_out) VALUES("2","德维恩·韦德","0","36","1500");
+-- INSERT INTO playstar (id,name,sex,age,fire_out) VALUES("3","科比·布莱恩特","0","40","1999"),
+							 ("4","玛雅·摩尔","1","29","999"),
+							 ("5","赵爽","1","28","888");
+-- INSERT INTO playstar (id,name,sex,age,fire_out) VALUES("6","惠若琪","1","27","900");
+-- DELETE FROM playstar WHERE name="惠若琪";
+--  ALTER TABLE playstar MODIFY name VARCHAR(30) NOT NULL;
+-- SELECT * FROM playstar;
+-- SELECT id,NAME from playstar;
+-- SELECT name AS "玛雅·摩尔",age AS "29" FROM playstar;
+-- SELECT id AS "编号" from playstar;
+-- SELECT * FROM playstar WHERE NAME LIKE "玛雅%";
+-- SELECT * FROM playstar WHERE age BETWEEN "28" AND "33";
+-- SELECT DISTINCT sex FROM playstar;
+-- SELECT * FROM playstar LIMIT 3;
+-- SELECT * FROM playstar LIMIT 3 OFFSET 2;
+-- SELECT * FROM playstar LIMIT 1,2;
+-- SELECT * from playstar WHERE id in (1,3,4);
+--  SELECT  CASE sex 
+-- 	WHEN "0" THEN "男"
+-- 	WHEN "1" THEN "女"
+-- 	ELSE "保密" END
+--  FROM playstar
+-- SELECT CASE
+-- 	WHEN fire_out>1000 THEN "猛男"
+-- 	WHEN fire_out<1000 THEN "菜鸟"
+-- ELSE "其他" END
+-- FROM playstar

@@ -1,0 +1,8 @@
+-- alter database py1808 charset=utf8
+-- create table player(id int primary key auto_increment,name varchar(40),age int,sex varchar(10),fire_out int )
+-- insert into player(name,age,sex,fire_out) values("a","1","男","700"),('b','2',"女",'700'),('c','3','男','1200'),('d','4','男','999'),('e','5','女','1300')
+-- delete from player where name='e'
+-- update player set fire_out='1400' where name='a'
+-- select name as '姓名',fire_out as '火力' from player where age in(2,3,4)
+-- insert into player values(5,'f','6','男','1500')
+-- alter table player modify sex varchar(4) default "男"

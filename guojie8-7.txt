@@ -1,0 +1,26 @@
+-- 1.查询出工资大于两千的人的姓名和公司的名字以及地址
+-- select b.name as 员工姓名, a.name as 公司名称 ,a.address as 公司地址 from staff as b,company as a where a.id = b.c_id and b.salary > 2000
+-- 2.计算各个公司员工的平均薪资
+-- select AVG(staff.salary) as 平均薪资,company.name as 公司名称 from staff,company where staff.c_id = company.id GROUP BY staff.c_id 
+-- 3.获取到各个公司员工工资的最大值
+-- select MAX(salary) as 最大值,company.name as 公司名称 from staff,company where staff.c_id = company.id GROUP BY staff.c_id 
+-- --4.列出平均工资大于2000的公司
+-- select * from company where id in (select c_id from staff,company where staff.c_id = company.id GROUP BY staff.c_id HAVING avg(salary) >2000 )
+--  5.3500以下不扣税0，3500-5000扣200，10000以上 2000（使用case, 显示的是扣的税钱）
+-- select name,salary,
+-- case when salary < 3500 then 0
+-- 		 when salary >=3500 and salary < 5000 then 200
+-- 			when salary >= 10000 then 2000
+-- 			else "你猜你交不交税" end 
+-- as "交税"
+-- from staff 
+-- 7.计算员工表内有多少条数据
+-- select COUNT(1) from staff
+
+--  6.将工资大于3500的人放进一个新的表（优秀表），之记录人名就可以
+-- create table yxb(
+-- 	name VARCHAR(50)
+-- );
+-- INSERT into yxb(name) select name from staff where salary > 3500
+-- 
+-- select * from yxb

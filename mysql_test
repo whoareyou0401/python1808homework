@@ -7,7 +7,3 @@
 -- insert into player values(5,'f','6','男','1500')
 -- alter table player modify sex varchar(4) default "男"
 
-
-
-
-

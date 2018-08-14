@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>老师信息表</h1>
+<table border="1" cellspacing="0" cellpadding="10">
+    <tr>
+        <td>姓名</td><td>年龄</td>
+    </tr>
+    {% for foo in teachers %}
+        <tr>
+        <td>{{ foo.name }}</td>
+        <td>{{ foo.age }}</td>
+        </tr>
+    {% endfor %}
+
+</table>
+</body>
+</html>

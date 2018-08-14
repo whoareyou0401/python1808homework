@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<table border="1">-->
+    <!--<tr><th>语言名字</th><th>热度</th></tr>-->
+    <!--<tr><td>python</td><td>30</td></tr>-->
+    <!--<tr><td>php</td><td>20</td></tr>-->
+    <!--<tr><td>javascript</td><td>10</td></tr>-->
+    <!--<tr><td>c++</td><td>19</td></tr>-->
+<!--</table>-->
+<!--<ul>-->
+    <!--{%for i in my_data%}-->
+    <!--<li>语言名字{{i.lname}}热度{{i.lhot}}</li>-->
+    <!--{%endfor%}-->
+<!--</ul>-->
+<center>
+<table border="1" cellpadding="5" cellspacing="0">
+    <tr>
+        <th>语言名字</th><th>热度</th>
+    </tr>
+    {%for i in my_data%}
+    <tr>
+        <td>{{i.lname}}</td>
+        <td>{{i.lhot}}</td>
+    </tr>
+    {%endfor%}
+</table>
+</center>
+</body>
+
+</html>

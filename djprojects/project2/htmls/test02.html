@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+<center>
+<table border="1" cellpadding="5" cellspacing="0">
+    <h1>亚马逊用户表</h1>
+    <tr>
+        <th>用户名</th><th>年龄</th><th>注册日期详细信息</th><th>修改日期</th><th>是否在用</th>
+    </tr>
+    {%for i in users%}
+    <tr>
+        <td>{{i.name}}</td>
+        <td>{{i.age}}</td>
+        <td>{{ i.set_time }}</td>
+        <td>{{ i.last_update }}</td>
+        <td>{{ i.is_used }}</td>
+    </tr>
+    {%endfor%}
+</table>
+</center>
+</body>
+</html>

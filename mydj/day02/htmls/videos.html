@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ vtitle }}</title>
+</head>
+<body>
+    <h1>好多鬼畜</h1>
+    <ul>
+        {% for foo in sp %}
+            <li>{{ foo.name }}的播放量是{{ foo.playno }}</li>
+        {% endfor %}
+
+    </ul>
+</body>
+</html>

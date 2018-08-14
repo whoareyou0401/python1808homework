@@ -1,0 +1,20 @@
+REATE TABLE player(id int auto_increment PRIMARY KEY, name VARCHAR(20),age int,sex int,fir_out int);
+-- 插入数据INSERT INTO player(name,age,sex,fir_out) VALUE("球员1",20,0,1200),("球员2",21,1,200),("球员3",22,0,800),("球员4",23,1,1500),("球员5",24,0,300);
+-- INSERT INTO player(name,age,sex,fir_out) VALUE("球员1",25,1,3000);
+-- 查询数据 
+-- SELECT * FROM player;
+-- SELECT * FROM player WHERE name LIKE "球员%";
+-- SELECT * FROM player WHERE age BETWEEN 21 and 23;
+-- SELECT DISTINCT name FROM player;
+-- SELECT * FROM player WHERE name in ("球员1","球员3");
+-- SELECT * FROM player WHERE LIMIT 3;
+-- SELECT name AS "姓名",age AS "年龄",sex AS "性别",fir_out AS "火力输出" FROM player;
+
+
+
+-- SELECT
+-- CASE name when "1" then '保密' ELSE "保密" END AS "姓名",
+-- CASE sex when 0 then '男' WHEN 1 THEN '女' END AS "性别",
+-- CASE age when 21 then '保密' ELSE "保密" END AS "年龄",
+-- CASE when fir_out>1000 then '猛男' ELSE "菜鸡" END AS "火力输出类型"
+-- FROM player;

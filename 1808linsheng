@@ -1,0 +1,2 @@
+-- CRE?ATE table player(id int auto_increment PRIMARY KEY, name VARCHAR(30),sex VARCHAR(4), age int, fire_out int );
+INSERT INTO player(name,sex,age,fire_out) VALUES("梅西", 0, 23, 1800 ),("姆巴佩", 0, 18, 2000 ),("c罗", 0, 33, 2100 ),("莫德里奇",0,20,1400),(" 乔丹 ",0,45,800);

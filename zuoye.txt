@@ -1,0 +1,30 @@
+REATE TABLE zuoye (id INT auto_increment PRIMARY KEY, name VARCHAR(30),age VARCHAR(30), sex VARCHAR(30), fireout VARCHAR(50));
+-- INSERT INTO zuoye(id,name,age,sex,fireout)VALUES("1","乔丹","40","0","1900"),
+-- ("2","科比","34","0","1850"),("3","阿凡达","50","1","1990"),("4","韦德","30","0","1200"),
+-- ("5","大魔王","27","1","2000")
+-- 查看like名字中有大的
+-- SELECT *FROM zuoye WHERE name LIKE "阿%"
+-- 查看between 2~4
+-- SELECT *FROM zuoye WHERE id BETWEEN 2 AND 4
+-- 去重 distinct
+-- SELECT DISTINCT sex FROM zuoye
+-- in 
+-- SELECT *FROM zuoye WHERE id in (2,3) 
+-- limit  限制  战力大于1500 的 只取两个
+-- SELECT * from zuoye where fire_out >1500 LIMIT 2;
+-- 删除
+-- DELETE from zuoye where name="科比";
+-- 修改年龄字段属性不为空
+-- ALTER table zuoye modify age int NOT NULL;
+-- case 查询男女
+-- SELECT CASE sex
+-- 		WHEN "0" THEN "男"
+-- 		WHEN "1" THEN "女"
+-- 		ELSE "保密"	END
+-- 		FROM zuoye 
+-- 猛男与菜鸡
+-- SELECT CASE 
+-- 			WHEN fireout > 1500	THEN "猛男"
+-- 			WHEN fireout < 1500 THEN "菜鸡"
+-- 			END
+-- 			FROM zuoye
